@@ -35,12 +35,13 @@ int main() {
 		cin >> x >> y;
 
 		//3. 입력받은 좌표의 유효성 체크
+		//정해진 칸 이외에 칸을 입력한 경우
 		if (x >= numCell || y >= numCell) {
 			cout << x << ", " << y << ": ";
 			cout << "x 와 y 둘 중 하나가 칸을 벗어납니다." << endl;
 			continue;
 
-		}
+		}//돌이 차 있는 경우
 		if (board[x][y] != ' ') {
 			cout << x << ", " << y << ":이미 돌이 차있습니다." << endl;
 			continue;
