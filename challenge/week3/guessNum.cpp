@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-	srand(time(null)); // random 함수 관련 설정
+	srand(time(NULL)); // random 함수 관련 설정
 
 	int answer = rand() % 100; //정답
 	int tries = 0; // 시도 횟수 저장하는 변수
