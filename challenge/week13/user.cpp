@@ -1,22 +1,29 @@
+// user.cpp 파일
+
 #include "user.h"
 
-void User::DecreaseHP() {
-	hp -= 2;
+
+
+
+int User::GetHP() {
+    return hp;
 }
-int User::GetHP()
-{
-	return hp;
-}
-void User::IncreaseHP() {
-	hp += 2;
-}
+
+
 void User::useHP() {
-	hp -= 1;
+    hp -= 1;
 }
-User::User(int hp) {
-	this->hp = hp;
-}
+
 void User::doAttack() {
-	cout << "공격합니다" << endl;
+    std::cout << "공격합니다" << std::endl;
 }
-Magician::Magician(
+
+
+void Magician::doAttack() {
+    std::cout << "마법 사용" << std::endl;
+}
+
+void Warrior::doAttack() {
+    std::cout << "베기 사용" << std::endl;
+}
+
